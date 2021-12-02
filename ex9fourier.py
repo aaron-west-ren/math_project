@@ -13,7 +13,7 @@ onepiece = np.piecewise(x, [x <= 0, x >= 0], [lambda x: -x, lambda x: 0])
 twopiece = np.append(onepiece,onepiece)  # double down of onepiece!!
 
 a = -4
-b = 4
+b = 16
 nn = len(twopiece)  # to increse the number of points change n from above
 dx = (b-a)/nn
 x = np.arange(a,b,dx) # redef of x to fit new expanded function
@@ -28,8 +28,7 @@ sum2 = 0  # no one cares about sumtwo
 ao = 1
 an = -.25 * (np.power(4 / (m * pi), 2) * (1 - np.cos(m * pi)))
 bn = -.25 * (-(4/(m *pi) * 4 * np.cos(n * pi)))
-print(an)
-print(bn)
+
 for i in m-1:
     sum1 = sum1 + an[i] * np.cos(m[i] * pi * x)
     sum2 = sum2 + bn[i] * np.sin(m[i] * pi * x)
