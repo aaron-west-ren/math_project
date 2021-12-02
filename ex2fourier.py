@@ -26,8 +26,8 @@ for i in m-1:
     #note bn = 0 for odd function
 estfx = ao + sum1
 plt.plot(x,onepiece, 'b' , label="f(x)")
-plt.plot(x, estfx, 'r', label="Taylor Approximation of f(x)")
-plt.title(r'Taylor Approximation ex2 Aaron West 11/30/2021')
+plt.plot(x, estfx, 'r', label="Fourier Approximation of f(x)")
+plt.title(r'Fourier Approximation ex2 Aaron West 11/30/2021')
 ax = plt.gca()
 
 ax.legend(frameon=False, loc='upper center', ncol=2)
