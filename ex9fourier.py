@@ -13,7 +13,7 @@ onepiece = np.piecewise(x, [x <= 0, x >= 0], [lambda x: -x, lambda x: 0])
 twopiece = np.append(onepiece,onepiece)  # double down of onepiece!!
 
 a = -4
-b = 16
+b = 12
 nn = len(twopiece)  # to increse the number of points change n from above
 dx = (b-a)/nn
 x = np.arange(a,b,dx) # redef of x to fit new expanded function
