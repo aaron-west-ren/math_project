@@ -1,7 +1,7 @@
 
 
 from sympy import series, Symbol
-from sympy.functions import sin, cos, exp
+from sympy.functions import sin, cos, exp, ln
 from sympy.plotting import plot
 import matplotlib.pyplot as plt
 
@@ -30,3 +30,5 @@ print('sin(x) =', taylor(sin(x), 0, 4))
 print('cos(x) =', taylor(cos(x), 0, 4))
 
 print('e(x) =', taylor(exp(x), 0, 4))
+
+print('ln(x) =', taylor(ln(x), 1.5, 4))  # # NOTE: this is what i added
